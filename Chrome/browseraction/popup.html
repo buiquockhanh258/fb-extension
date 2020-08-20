@@ -1,0 +1,172 @@
+<html>
+
+<head>
+	<title>Facebook Extenstion</title>
+	<meta charset="UTF-8" />
+	<script src='popup.js'></script>
+	<style>
+		/* Style the body */
+		body {
+			font-family: Arial;
+			margin: 0;
+			width: 400px;
+			height: 100px;
+		}
+
+		/* Header/Logo Title */
+		.header {
+			padding: 5px;
+			text-align: center;
+			background: #27293d;
+			color: white;
+			font-size: 20px;
+		}
+
+		.btn {
+			border: none;
+			/* Remove borders */
+			color: white;
+			/* Add a text color */
+			padding: 14px 28px;
+			/* Add some padding */
+			cursor: pointer;
+			/* Add a pointer cursor on mouse-over */
+		}
+		.autolike {
+			background-color: #c00000;
+		}
+		.addfriend {
+			background-color: #276ef1;
+		}
+
+		/* Green */
+		.addfriend:hover {
+			background-color: #276ef1;
+		}
+
+		.requestSend {
+			background-color: #002060;
+		}
+
+		/* Orange */
+		.requestSend:hover {
+			background: #002060;
+		}
+
+		.cancel {
+			background-color: #e03a3e;
+		}
+
+		/* Red */
+		.cancel:hover {
+			background: #e03a3e;
+		}
+
+		.openfriend {
+			background-color: #00aaff;
+		}
+
+		/* Green */
+		.openfriend:hover {
+			background-color: #00aaff;
+		}
+
+		.confirm {
+			background-color: #64c306;
+		}
+
+		/* Orange */
+		.confirm:hover {
+			background: #64c306;
+		}
+
+		.remove {
+			background-color: #d650d6;
+		}
+
+		/* Red */
+		.remove:hover {
+			background: #d650d6;
+		}
+
+		.delete {
+			background-color: #ff8d72;
+		}
+
+		/* Red */
+		.delete:hover {
+			background: #ff8d72;
+		}
+		.addfriends {
+			background-color: #ffc03c;
+		}
+
+		/* Red */
+		.addfriends:hover {
+			background: #ffc03c;
+		}
+
+		input[type=text],
+		select {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		input[type=submit] {
+			width: 100%;
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<h6>AUTO ADD FRIEND FACEBOOK ™</h1>
+	</div>
+	<div id="enterKey">
+		<div style="width:100%;background-color: #4caf50;">
+			<input type="text" id="key" name="valuekey" placeholder="Enter key value..">
+		</div>
+		<div style="width:100%">
+			<button class="btn openfriend" id="buttonEnterKey" style="width: 100%;">Enter</button>
+		</div>
+	</div>
+	<div id="KeyShow" style="width:100%;display:none;">
+		<div style="width:100%">
+			<button class="btn autolike" id="buttonAutoLike" style="width: 100%;">AUTO LIKE</button>
+		</div>
+		<div style="width:100%">
+			<button class="btn addfriend" id="buttonAddfriend" style="width: 100%;">ADD FRIEND</button>
+		</div>
+		<div style="width:100%">
+			<button class="btn requestSend" id="btnOpenNewTab" style="float:left;width:50%">REQUEST SENT</button>
+			<button class="btn cancel" id="buttonUn" style="float:right;width:50%">CANCEL</button>
+		</div>
+		<div style="width:100%">
+			<button class="btn openfriend" id="buttonOpenFriend" style="width: 100%;">OPEN FRIEND REQUEST</button>
+		</div>
+		<div style="width:100%">
+			<button class="btn confirm" id="btnConfirm" style="float:left;width:25%">CONFIRM</button>
+			<button class="btn addfriends" id="buttonfriends" style="float:right;width:25%">ADD</button>
+			<button class="btn delete" id="buttonDelete" style="float:right;width:25%">DELETE</button>
+			<button class="btn remove" id="buttonRemove" style="float:right;width:25%">REMOVE</button>
+		</div>
+	</div>
+</body>
+
+</html>
